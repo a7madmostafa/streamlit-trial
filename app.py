@@ -82,28 +82,28 @@ st.sidebar.checkbox("Yes2")
 st.sidebar.radio("Pick your gender2: ", ['male', 'female'])
 
 
-# import matplotlib.pyplot as plt
-# import numpy as np
+import matplotlib.pyplot as plt
+import numpy as np
 
-# rand=np.random.normal(1, 2, size=20)
-# fig, ax = plt.subplots()
-# ax.hist(rand, bins=15)
+rand=np.random.normal(1, 2, size=20)
+fig, ax = plt.subplots()
+ax.hist(rand, bins=15)
 
-# st.markdown("<h1 style='text-align: center; color: red;'>Matplotlib Figure</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: red;'>Matplotlib Figure</h1>", unsafe_allow_html=True)
 
-# st.pyplot(fig)
+st.pyplot(fig)
 
-# import plotly.express as px
+import plotly.express as px
 
-# rand=np.random.normal(1, 2, size=20)
-# fig = px.histogram(rand, nbins=15)
-# st.write(' # Plotly Histogram')
-# st.plotly_chart(fig)
+rand=np.random.normal(1, 2, size=20)
+fig = px.histogram(rand, nbins=15)
+st.write(' # Plotly Histogram')
+st.plotly_chart(fig)
 
-# df = pd.DataFrame({'k':[1,2,3,4,5], 'v':[10,20,30,40,50]})
-# st.write(' # Plotly Bar Chart')
-# fig2 =px.bar(df, x='k', y='v', width=300)
-# st.plotly_chart(fig2)
+df = pd.DataFrame({'k':[1,2,3,4,5], 'v':[10,20,30,40,50]})
+st.write(' # Plotly Bar Chart')
+fig2 =px.bar(df, x='k', y='v', width=300)
+st.plotly_chart(fig2)
 
-# st.write(' # Plotly Line Chart')
-# st.plotly_chart(px.line(df, x='k', y='v'))
+st.write(' # Plotly Line Chart')
+st.plotly_chart(px.line(df, x='k', y='v'))
